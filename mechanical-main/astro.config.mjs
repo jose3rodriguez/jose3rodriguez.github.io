@@ -9,7 +9,7 @@ export default defineConfig({
         tailwind()],
 
         site: 'https://jose3rodriguez.github.io',
-
+        base: 'jose3rodriguez',
         output: 'static',
         outDir: './docs', 
         build: {

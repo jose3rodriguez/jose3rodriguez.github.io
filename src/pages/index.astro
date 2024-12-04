@@ -1,11 +1,52 @@
----
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #4e6db6;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			text-align: center; /* Center text and inline elements */
+		}
+		h1 {
+			color: #333;
+		}
+		p {
+			color: #666;
+		}
+		.centered-image {
+			display: block;
+			margin: 0 auto;
+		}
+	</style>
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
----
+</head>
+<body>
+    <div class="container" >
+        <h1>Click Below to leave Jose (and La Masa) a review!</h1>
+        <a href="https://www.google.com/maps/place/La+Masa+Empanada+Bar/@43.0531283,-87.8972946,17z/data=!4m8!3m7!1s0x8805191dfaf94a17:0x8e6e187c28d6326c!8m2!3d43.0531283!4d-87.8947197!9m1!1b1!16s%2Fg%2F11bv30kprr?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D">
+			<img class="centered-image" src="/src/assets/images.png" alt="alternative_text">
+		</a>
+        <p>Thank you for coming! Hope you enjoyed the food and service :)</p>
+		<p>Ask about our Par-Bake Platters and our LAB Box wine(amazing deal)</p>
 
-<Layout>
-	<Welcome />
-</Layout>
+    </div>
+</body>
+</html>

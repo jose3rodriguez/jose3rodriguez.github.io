@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import lmasa from '/src/assets/lmasa.svg';
+import linkedIn from '/src/assets/linkedin.png';
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -29,12 +30,6 @@ import lmasa from '/src/assets/lmasa.svg';
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
-        .container img {
-            max-width: 100%;
-            height: auto; /* Maintain aspect ratio */
-            display: block;
-            margin: 0 auto;
-        }
         h1 {
             color: #333;
         }
@@ -61,6 +56,16 @@ import lmasa from '/src/assets/lmasa.svg';
         </a>
         <p>Thank you for coming! Hope you enjoyed the food and service :)</p>
         <p>Ask about our Par-Bake Platters, Gift Cards and our LAB Box wine!</p>
+        <p>-------------------------------------------</p>
+        <p>-------------------------------------------</p>
+        <p>-------------------------------------------</p>
+        <p>-------------------------------------------</p>
+
+        <p>Computer Science grad since May. I appreciate any advice and all connections!</p>
+        <a href="https://www.linkedin.com/in/jtrinidadrodriguez/">
+            <!-- Use explicit width and height here -->
+            <Image src={linkedIn} alt="LinkedIn Image" width="60" height="60" />
+        </a>
     </div>
 </body>
 </html>
